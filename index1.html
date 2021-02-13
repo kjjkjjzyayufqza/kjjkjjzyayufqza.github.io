@@ -17,11 +17,11 @@
 
 	<!-- CSS
     ================================================== -->
-   <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/default.css">
 	<link rel="stylesheet" href="css/layout.css">
-   <link rel="stylesheet" href="css/media-queries.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
-
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" type="text/css" href="live2d/assets/waifu.css"/>
    <!-- Script
    ================================================== -->
 	<script src="js/modernizr.js"></script>
@@ -29,8 +29,46 @@
    <!-- Favicons
 	================================================== -->
 	<link rel="shortcut icon" href="favicon.png" >
-	<link rel="stylesheet" type="text/css" href="live2d/assets/waifu.css"/>
+	
 	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<!-- style
+	================================================== -->
+	<script type="text/javascript">
+
+	ps=new Array("images/daban_1.jpg","images/daban_2.jpg","images/daban_3.jpg","images/daban_4.jpg","images/japan_3.jpg");
+
+	var i=0;
+	function hanshu()
+	{
+	   i++;
+	  
+	   if(i>=ps.length)
+		 i=0;
+		document.getElementById("tu").src=ps[i];
+	  
+	}
+
+	setInterval(hanshu,10000);
+
+	</script>
+	<!--拖放大图片-->
+	<style>
+	.box{
+		float: left;
+		width: 640px;
+		transition: all 0.5s;
+		
+		box-shadow: -5px 0px 10px 0px #000; #阴影
+		position: relative;
+	  }
+	  .show:hover .box{
+		width: 50px;
+
+	  }
+	  .show .box:hover{
+		width: 800px;
+	  }
+	</style>
 </head>
 
 <body>
@@ -81,12 +119,16 @@
 
       <div class="row banner">
          <div class="banner-text">
-            <h1 class="responsive-headline">Japanese</h1> <br />
-			<font color="white" size="5"> 日本の文化  </font>
-            <h3> <font color="red" size="100%">頁面維修中--頁面維修中--頁面維修中--頁面維修中--頁面維修中</font> 
-			<a class="smoothscroll" href="#about"> About Japanese </a>.</h3>
+            <h1 class="responsive-headline">大阪市</h1> <br />
+			<font size="8" color="white" >おおさかし</font> <br />
+			<!-- <font color="white" size="5"> 日本の文化  </font> -->
+            <h3> <font color="red" size="100%">頁面維修中--頁面維修中--頁面維修中--頁面維修中--頁面維修中</font>  <br />
+			<a href="#about" class="button"><i class="fa fa-chevron-down"></i>About 大阪市</a>
+			
+			
             <hr />
-            <ul class="social">
+			
+            <!--<ul class="social">
                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
@@ -95,6 +137,7 @@
                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                <li><a href="#"><i class="fa fa-skype"></i></a></li>
             </ul>
+			-->
          </div>
       </div>
 
@@ -108,7 +151,7 @@
    <!-- About Section
    ================================================== -->
    <section id="about">
-
+	
       <div class="row">
 
          <div class="three columns">
@@ -119,39 +162,46 @@
 
          <div class="nine columns main-col">
 
-            <h2>About Japanese</h2>
+            <h2>About 大阪市</h2>
 
-            <font color="white">日本国，通称日本，是位于东亚的岛屿国家，由日本列岛、琉球群岛和伊豆－小笠原群岛等6,852座岛屿所组成，
-			面积约37.8万平方公里。是亚洲面积最大的发达国家。国土全境被太平洋及鄂霍次克海、日本海、东海等陆缘海环抱，
-			西邻朝鲜半岛以及俄罗斯远东地区，东北接千岛群岛，西南面中华民国与中华人民共和国。
+            <font color="white">大阪市是位于日本大阪府中部的都市，为大阪府府治、以及大阪府两个政令指定都市之一，
+			亦是大阪都市圈、京阪神大都市圈、乃至于近畿地方的中心城市。全市面积223平方公里，
+			夜间人口约有269.5万人，是日本人口第三多的城市；日间人口则超过353万人，位居日本第二。
             </font>
-
+			
             <div class="row">
 
                <div class="columns contact-details">
-					<img src="images/japan_fun.gif">
-                  <h2>Contact Details</h2>
-                  <p class="address">
+                  <!--<h2>Contact Details</h2>
+                  
+				   <p class="address">
 						   <span>Jonathan Doe</span><br>
 						   <span>1600 Amphitheatre Parkway<br>
 						         Mountain View, CA 94043 US
                      </span><br>
 						   <span>(123)456-7890</span><br>
                      <span>anyone@website.com</span>
-					   </p>
+					   </p> -->
 
                </div>
 
                <div class="columns download">
                   <p>
-                     <a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                     <a href="https://zh.wikipedia.org/wiki/%E5%A4%A7%E9%98%AA%E5%B8%82" class="button"><i class="fa fa-hand-o-right"></i>Read More</a>
                   </p>
                </div>
-
+			
             </div> <!-- end row -->
 
          </div> <!-- end .main-col -->
-
+		<div  class="show">
+			<div class="wap">
+				<div class="box" >
+		<img src="images/daban_1.jpg" id="tu" width=900px height=200px> </img>  <!--add images-->
+		
+		</div>
+		</div>
+		</div>
       </div>
 
    </section> <!-- About Section End-->
@@ -160,13 +210,15 @@
    <!-- Resume Section
    ================================================== -->
    <section id="resume">
-
+	<center> <div style="border-radius: 4px;"> <hup> 大阪旅遊景點推薦 </hup> </div></center><br/>
+	
       <!-- Education
       ----------------------------------------------- -->
       <div class="row education">
 
          <div class="three columns header-col">
-            <h1><span>Education</span></h1>
+            <h1><span>大阪城天守閣</span></h1>
+			<img src="images/daban_1.jpg"  > </img>
          </div>
 
          <div class="nine columns main-col">
