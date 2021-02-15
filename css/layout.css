@@ -280,6 +280,11 @@ ul#nav li.current a { color: #F06000; }
    font: 15px/24px 'opensans-regular', sans-serif;
    margin-top: 6px;
 }
+/*-------用#来分区------------------------------*/
+#resume .imagesbutton {
+   font: 15px/24px 'opensans-regular', sans-serif;
+   margin-top: 6px;
+}
 
 /*----------------------------------------------*/
 /*	Skill Bars
