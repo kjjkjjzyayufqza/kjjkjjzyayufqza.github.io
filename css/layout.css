@@ -9,7 +9,7 @@
    a. General Styles
    b. Header Styles
    c. About Section
-   d. Resume Section
+   d. Districts Section
    e. Portfolio Section
    f. Call To Action Section
    g. Testimonials Section
@@ -38,7 +38,9 @@ header {
 	-webkit-background-size: cover !important;
    text-align: center;
    overflow: hidden;
+   
 }
+
 
 /* vertically center banner section */
 header:before {
@@ -232,56 +234,57 @@ ul#nav li.current a { color: #F06000; }
 
 
 /* ------------------------------------------------------------------ */
-/* d. Resume Section
+/* d. Districts Section
 /* ------------------------------------------------------------------ */
 
-#resume {
+#Districts {
    background: #fff;
    padding-top: 90px;
    padding-bottom: 72px;
    overflow: hidden;
+   
 }
 
-#resume a, #resume a:visited  { color: #11ABB0; }
-#resume a:hover, #resume a:focus { color: #313131; }
+#Districts a, #Districts a:visited  { color: #11ABB0; }
+#Districts a:hover, #Districts a:focus { color: #313131; }
 
-#resume h1 {
+#Districts h1 {
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
 }
-#resume h1 span {
+#Districts h1 span {
    border-bottom: 3px solid #11ABB0;
    padding-bottom: 6px;
 }
-#resume h3 {
+#Districts h3 {
    font: 25px/30px 'opensans-bold', sans-serif;
 }
 
-#resume .header-col { padding-top: 9px; }
-#resume .main-col { padding-right: 10%; }
+#Districts .header-col { padding-top: 9px; }
+#Districts .main-col { padding-right: 10%; }
 
 .education, .work {
    margin-bottom: 48px;
    padding-bottom: 24px;
    border-bottom: 1px solid #E8E8E8;
 }
-#resume .info {
+#Districts .info {
    font: 16px/24px 'librebaskerville-italic', serif;
    color: #6E7881;
    margin-bottom: 18px;
    margin-top: 9px;
 }
-#resume .info span {
+#Districts .info span {
    margin-right: 5px;
    margin-left: 5px;
 }
-#resume .date {
+#Districts .date {
    font: 15px/24px 'opensans-regular', sans-serif;
    margin-top: 6px;
 }
 /*-------用#来分区------------------------------*/
-#resume .imagesbutton {
+#Districts .imagesbutton {
    font: 15px/24px 'opensans-regular', sans-serif;
    margin-top: 6px;
 }
@@ -491,6 +494,8 @@ ul#nav li.current a { color: #F06000; }
    margin-top: -15px;
 }
 .portfolio-item .item-wrap img {
+    //width:300px ; 
+    //height:200px;
    vertical-align: bottom;
 }
 .portfolio-item .portfolio-item-meta { padding: 18px }
