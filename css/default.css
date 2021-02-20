@@ -170,7 +170,6 @@ h4 { font-size: 20px; line-height: 30px; margin-bottom: 6px; }
 h5 { font-size: 18px; line-height: 30px; }
 h6 { font-size: 14px; line-height: 30px; }
 hup { font-size: 50px; line-height: 42px; margin-bottom: 12px; letter-spacing: 20px; }
-hup red { font-size: 50px; line-height: 42px; margin-bottom: 12px; letter-spacing: 20px; color: red;}
 .subheader { }
 
 p { margin: 0 0 30px 0; }
@@ -716,14 +715,14 @@ input[type="checkbox"] { display: inline; }
     margin: 0 auto;
 }
 
-/* removed gutters */
+/* removed gutters 
 .row.collapsed > .column,
 .row.collapsed > .columns,
 .column.collapsed, .columns.collapsed  { padding: 0; }
 
 [class*="column"] + [class*="column"]:last-child { float: right; }
 [class*="column"] + [class*="column"].end { float: right; }
-
+--*/
 /* column widths */
 .row .one         { width: 8.33333%; }
 .row .two         { width: 16.66667%; }
@@ -893,25 +892,5 @@ properly.
 	text-align: center !important;
 }
 
-/*光标动画*/
-@keyframes caret {
-    50% {border-color: transparent;}
-}
 
-/*文本动画：从宽度为0开始*/
-@keyframes text {
-    from {width: 0;}
-}
-
-.load-text {
-    width: 11ch;
-    margin: 0 auto;
-    overflow: hidden;
-    word-break: keep-all;
-    background: rgba(181, 219, 136,0.2);
-    color: blck;
-    border-right: 3px solid #000000;
-    font: bold 400% monospace;
-    animation: caret 0.5s step-end infinite ,text 5s infinite steps(8);
-}
 

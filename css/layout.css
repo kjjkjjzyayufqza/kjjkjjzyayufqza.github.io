@@ -9,7 +9,7 @@
    a. General Styles
    b. Header Styles
    c. About Section
-   d. Districts Section
+   d. Resume Section
    e. Portfolio Section
    f. Call To Action Section
    g. Testimonials Section
@@ -38,9 +38,7 @@ header {
 	-webkit-background-size: cover !important;
    text-align: center;
    overflow: hidden;
-   
 }
-
 
 /* vertically center banner section */
 header:before {
@@ -193,6 +191,7 @@ ul#nav li.current a { color: #F06000; }
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
+   
 }
 
 #about a, #about a:visited  { color: #fff; }
@@ -234,57 +233,56 @@ ul#nav li.current a { color: #F06000; }
 
 
 /* ------------------------------------------------------------------ */
-/* d. Districts Section
+/* d. Resume Section
 /* ------------------------------------------------------------------ */
 
-#Districts {
+#resume {
    background: #fff;
    padding-top: 90px;
    padding-bottom: 72px;
    overflow: hidden;
-   
 }
 
-#Districts a, #Districts a:visited  { color: #11ABB0; }
-#Districts a:hover, #Districts a:focus { color: #313131; }
+#resume a, #resume a:visited  { color: #11ABB0; }
+#resume a:hover, #resume a:focus { color: #313131; }
 
-#Districts h1 {
+#resume h1 {
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
 }
-#Districts h1 span {
+#resume h1 span {
    border-bottom: 3px solid #11ABB0;
    padding-bottom: 6px;
 }
-#Districts h3 {
+#resume h3 {
    font: 25px/30px 'opensans-bold', sans-serif;
 }
 
-#Districts .header-col { padding-top: 9px; }
-#Districts .main-col { padding-right: 10%; }
+#resume .header-col { padding-top: 9px; }
+#resume .main-col { padding-right: 10%; }
 
 .education, .work {
    margin-bottom: 48px;
    padding-bottom: 24px;
    border-bottom: 1px solid #E8E8E8;
 }
-#Districts .info {
+#resume .info {
    font: 16px/24px 'librebaskerville-italic', serif;
    color: #6E7881;
    margin-bottom: 18px;
    margin-top: 9px;
 }
-#Districts .info span {
+#resume .info span {
    margin-right: 5px;
    margin-left: 5px;
 }
-#Districts .date {
+#resume .date {
    font: 15px/24px 'opensans-regular', sans-serif;
    margin-top: 6px;
 }
 /*-------用#来分区------------------------------*/
-#Districts .imagesbutton {
+#resume .imagesbutton {
    font: 15px/24px 'opensans-regular', sans-serif;
    margin-top: 6px;
 }
@@ -333,74 +331,73 @@ ul#nav li.current a { color: #F06000; }
    border-radius: 3px 0 0 3px;
 }
 
-.MINAMI_AREA {
-  	width: 100%;
-  	-moz-animation: MINAMI_AREA 20s ease;
-  	-webkit-animation: MINAMI_AREA 20s ease;
-}
-.OSAKA_CASTLE {
-  	width: 100%;
-  	-moz-animation: OSAKA_CASTLE 20s ease;
-  	-webkit-animation: OSAKA_CASTLE 20s ease;
-}
-.TENNOJI_AREA {
-  	width: 100%;
-  	-moz-animation: TENNOJI_AREA 20s ease;
-  	-webkit-animation: TENNOJI_AREA 20s ease;
-}
 .KITA_AREA {
-  	width: 100%;
-  	-moz-animation: KITA_AREA 20s ease;
-  	-webkit-animation: KITA_AREA 20s ease;
+  	width: 60%;
+  	-moz-animation: KITA_AREA 2s ease;
+  	-webkit-animation: KITA_AREA 2s ease;
+}
+.MINAMI_AREA {
+  	width: 55%;
+  	-moz-animation: MINAMI_AREA 2s ease;
+  	-webkit-animation: MINAMI_AREA 2s ease;
 }
 .OSAKA_BAY_AREA {
-  	width: 100%;
-  	-moz-animation: OSAKA_BAY_AREA 20s ease;
-  	-webkit-animation: OSAKA_BAY_AREA 20s ease;
+  	width: 50%;
+  	-moz-animation: OSAKA_BAY_AREA 2s ease;
+  	-webkit-animation: OSAKA_BAY_AREA 2s ease;
+}
+.OSAKA_CASTLE {
+  	width: 90%;
+  	-moz-animation: OSAKA_CASTLE 2s ease;
+  	-webkit-animation: OSAKA_CASTLE 2s ease;
+}
+.TENNOJI_AREA {
+  	width: 80%;
+  	-moz-animation: TENNOJI_AREA 2s ease;
+  	-webkit-animation: TENNOJI_AREA 2s ease;
 }
 
+@-moz-keyframes KITA_AREA {
+  0%   { width: 0px;  }
+  100% { width: 60%;  }
+}
 @-moz-keyframes MINAMI_AREA {
   0%   { width: 0px;  }
-  100% { width: 100%;  }
+  100% { width: 55%;  }
+}
+@-moz-keyframes OSAKA_BAY_AREA {
+  0%   { width: 0px;  }
+  100% { width: 50%;  }
 }
 @-moz-keyframes OSAKA_CASTLE {
   0%   { width: 0px;  }
-  100% { width: 80%;  }
+  100% { width: 90%;  }
 }
 @-moz-keyframes TENNOJI_AREA {
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }
-@-moz-keyframes KITA_AREA {
-  0%   { width: 0px;  }
-  100% { width: 100%;  }
-}
-@-moz-keyframes OSAKA_BAY_AREA {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
 
+@-webkit-keyframes KITA_AREA {
+  0%   { width: 0px;  }
+  100% { width: 60%;  }
+}
 @-webkit-keyframes MINAMI_AREA {
   0%   { width: 0px;  }
-  100% { width: 100%;  }
+  100% { width: 55%;  }
+}
+@-webkit-keyframes OSAKA_BAY_AREA {
+  0%   { width: 0px;  }
+  100% { width: 50%;  }
 }
 @-webkit-keyframes OSAKA_CASTLE {
   0%   { width: 0px;  }
-  100% { width: 80%;  }
+  100% { width: 90%;  }
 }
 @-webkit-keyframes TENNOJI_AREA {
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }
-@-webkit-keyframes KITA_AREA {
-  0%   { width: 0px;  }
-  100% { width: 100%;  }
-}
-@-webkit-keyframes OSAKA_BAY_AREA {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-
 
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
@@ -1002,18 +999,30 @@ footer .social-links li:first-child { margin-left: 0; }
 }
 #go-top a:hover { background-color: #0F9095; }
 
-	.box{
-		float: left;
-		width: 640px;
-		transition: all 0.5s;
-		
-		box-shadow: -5px 0px 10px 0px #000; #阴影
-		position: relative;
-	  }
-	  .show:hover .box{
-		width: 50px;
+#Districts {
+   background: white;
+   padding-top: 96px;
+   padding-bottom: 66px;
+   overflow: hidden;
+}
+/*光标动画*/
+@keyframes caret {
+    50% {border-color: transparent;}
+}
 
-	  }
-	  .show .box:hover{
-		width: 800px;
-	  }
+/*文本动画：从宽度为0开始*/
+@keyframes text {
+    from {width: 0;}
+}
+
+.load-text {
+    width: 11ch;
+    margin: 0 auto;
+    overflow: hidden;
+    word-break: keep-all;
+    background: rgba(181, 219, 136,0.2);
+    color: #b1f1f3;
+    border-right: 3px solid #000000;
+    font: bold 400% monospace;
+    animation: caret 0.5s step-end infinite ,text 5s infinite steps(11);
+}
